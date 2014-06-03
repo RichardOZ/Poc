@@ -1,0 +1,791 @@
+2014-06-03 23:29:43,423 [Thread-15] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:55)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:51)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:120)
+	at org.codehaus.groovy.grails.plugins.web.GroovyPagesGrailsPlugin$_closure5.doCall(GroovyPagesGrailsPlugin.groovy:332)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1276)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1085)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:909)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.invokeOnChangeListener(DefaultGrailsPlugin.java:767)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.notifyOfEvent(DefaultGrailsPlugin.java:716)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPluginManager.informObservers(DefaultGrailsPluginManager.java:242)
+	at org.codehaus.groovy.grails.plugins.DefaultGrailsPlugin.notifyOfEvent(DefaultGrailsPlugin.java:732)
+	at org.codehaus.groovy.grails.plugins.AbstractGrailsPluginManager.informOfClassChange(AbstractGrailsPluginManager.java:405)
+	at org.codehaus.groovy.grails.plugins.AbstractGrailsPluginManager.informOfFileChange(AbstractGrailsPluginManager.java:366)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectWatcher.informPluginManager(GrailsProjectWatcher.java:226)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectWatcher.access$400(GrailsProjectWatcher.java:48)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectWatcher$1.onNew(GrailsProjectWatcher.java:152)
+	at org.codehaus.groovy.grails.compiler.AbstractDirectoryWatcher.fireOnNew(AbstractDirectoryWatcher.java:76)
+	at org.codehaus.groovy.grails.compiler.PollingDirectoryWatcher.cacheFilesForDirectory(PollingDirectoryWatcher.java:107)
+	at org.codehaus.groovy.grails.compiler.PollingDirectoryWatcher.cacheFilesForDirectory(PollingDirectoryWatcher.java:103)
+	at org.codehaus.groovy.grails.compiler.PollingDirectoryWatcher.checkForNewFiles(PollingDirectoryWatcher.java:87)
+	at org.codehaus.groovy.grails.compiler.PollingDirectoryWatcher.run(PollingDirectoryWatcher.java:45)
+	at org.codehaus.groovy.grails.compiler.DirectoryWatcher.run(DirectoryWatcher.java:160)
+	at org.codehaus.groovy.grails.project.compiler.GrailsProjectWatcher.run(GrailsProjectWatcher.java:161)
+	at java_lang_Runnable$run.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:112)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProcess.startProjectWatcher(ForkedGrailsProcess.groovy:709)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1085)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:909)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1030)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:909)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:66)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:133)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:145)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProcess$_setupReloading_closure16.doCall(ForkedGrailsProcess.groovy:698)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProcess$_setupReloading_closure16.doCall(ForkedGrailsProcess.groovy)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1085)
+	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:909)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at groovy.lang.Closure.call(Closure.java:417)
+	at groovy.lang.Closure.run(Closure.java:504)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:43,438 [Thread-15] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:43,466 [Thread-15] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:43,480 [Thread-15] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:58,978 [http-bio-8080-exec-5] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:374)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:206)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:58,981 [http-bio-8080-exec-5] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:58,982 [http-bio-8080-exec-5] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,005 [http-bio-8080-exec-5] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,007 [http-bio-8080-exec-5] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,008 [http-bio-8080-exec-5] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,360 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:374)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:206)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,362 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,363 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,369 [http-bio-8080-exec-8] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:374)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:206)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,371 [http-bio-8080-exec-8] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,373 [http-bio-8080-exec-8] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,380 [http-bio-8080-exec-3] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:374)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:206)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:313)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,384 [http-bio-8080-exec-3] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,385 [http-bio-8080-exec-3] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,384 [http-bio-8080-exec-8] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,388 [http-bio-8080-exec-8] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,390 [http-bio-8080-exec-8] ERROR StackTrace  - Servlet.service() for servlet [default] in context with path [/grails-hello] threw exception
+ - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,392 [http-bio-8080-exec-3] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,393 [http-bio-8080-exec-3] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,394 [http-bio-8080-exec-3] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,384 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,401 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,390 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:374)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:206)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,403 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,404 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,402 [http-bio-8080-exec-9] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,414 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:374)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:206)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,415 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,416 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,415 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,427 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,428 [http-bio-8080-exec-1] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,438 [http-bio-8080-exec-4] ERROR StackTrace  - Servlet.service() for servlet [default] in context with path [/grails-hello] threw exception
+ - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,441 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,442 [http-bio-8080-exec-4] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,440 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:374)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:206)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:315)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,445 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,446 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,466 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,467 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,468 [http-bio-8080-exec-7] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,850 [http-bio-8080-exec-6] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:374)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:206)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:313)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,851 [http-bio-8080-exec-6] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,851 [http-bio-8080-exec-6] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,863 [http-bio-8080-exec-6] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:29:59,863 [http-bio-8080-exec-6] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:29:59,864 [http-bio-8080-exec-6] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:30:00,106 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.checkDevelopmentReloadingState(UrlMappingsFilter.java:374)
+	at org.codehaus.groovy.grails.web.mapping.filter.UrlMappingsFilter.doFilterInternal(UrlMappingsFilter.java:206)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.servlet.mvc.GrailsWebRequestFilter.doFilterInternal(GrailsWebRequestFilter.java:69)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at javax.servlet.FilterChain$doFilter.call(Unknown Source)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.codehaus.groovy.grails.web.filters.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:67)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:344)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:261)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:98)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1040)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:607)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:313)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:30:00,107 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:30:00,108 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:30:00,112 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
+2014-06-03 23:30:00,113 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at java.lang.Thread.run(Thread.java:695)
+2014-06-03 23:30:00,113 [http-bio-8080-exec-2] ERROR StackTrace  - Full Stack Trace:
+java.lang.RuntimeException: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	at asset.pipeline.AssetPipelineFilter.doFilter(AssetPipelineFilter.groovy:62)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.grails.commons.DefaultGrailsApplication.isArtefactOfType() is applicable for argument types: (java.lang.String, org.springframework.core.io.FileSystemResource) values: [TagLib, file [/Users/ionix/git/Poc/grails-hello/grails-app/controllers/com/github/rich/grails/PostController.groovy]]
+Possible solutions: isArtefactOfType(java.lang.String, java.lang.Class), isArtefactOfType(java.lang.String, java.lang.String)
+	... 1 more
